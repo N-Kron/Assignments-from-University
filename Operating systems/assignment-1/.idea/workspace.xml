@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d71069bc-48e3-4faf-856c-7af4f41ba4b3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/se/lnu/os/ht23/a1/required/impl/CustomTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/se/lnu/os/ht23/a1/required/impl/CustomTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/lnu/os/ht23/a1/provided/Registrar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lnu/os/ht23/a1/provided/Registrar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/lnu/os/ht23/a1/provided/data/RegistrarType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lnu/os/ht23/a1/provided/data/RegistrarType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/lnu/os/ht23/a1/provided/data/VisitEntry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lnu/os/ht23/a1/provided/data/VisitEntry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/lnu/os/ht23/a1/provided/impl/RegistrarFactoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lnu/os/ht23/a1/provided/impl/RegistrarFactoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/lnu/os/ht23/a1/provided/impl/RegistrarImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lnu/os/ht23/a1/provided/impl/RegistrarImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/lnu/os/ht23/a1/provided/impl/RegistrarLaboriousImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lnu/os/ht23/a1/provided/impl/RegistrarLaboriousImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/lnu/os/ht23/a1/provided/impl/RegistrarLazyImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lnu/os/ht23/a1/provided/impl/RegistrarLazyImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/lnu/os/ht23/a1/required/Hammock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lnu/os/ht23/a1/required/Hammock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/lnu/os/ht23/a1/required/NapServerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lnu/os/ht23/a1/required/NapServerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/lnu/os/ht23/a1/required/QueueHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lnu/os/ht23/a1/required/QueueHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/lnu/os/ht23/a1/required/WaitingHall.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lnu/os/ht23/a1/required/WaitingHall.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/se/lnu/os/ht23/a1/TestUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/se/lnu/os/ht23/a1/TestUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/se/lnu/os/ht23/a1/provided/impl/RegistratorLaboriousTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/se/lnu/os/ht23/a1/provided/impl/RegistratorLaboriousTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/se/lnu/os/ht23/a1/provided/impl/RegistratorLazyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/se/lnu/os/ht23/a1/provided/impl/RegistratorLazyTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/se/lnu/os/ht23/a1/provided/impl/RegistratorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/se/lnu/os/ht23/a1/provided/impl/RegistratorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/se/lnu/os/ht23/a1/required/impl/CustomTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/se/lnu/os/ht23/a1/required/impl/CustomTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/se/lnu/os/ht23/a1/required/impl/NapServerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/se/lnu/os/ht23/a1/required/impl/NapServerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/se/lnu/os/ht23/a1/required/impl/SleepTester.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/se/lnu/os/ht23/a1/required/impl/SleepTester.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2YoLQDMPC9vbIa0Mpzoli6pR1L9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/noa/Operating systems/operating-systems&quot;
+  }
+}</component>
+  <component name="RunManager" selected="JUnit.CustomTests.check3Batches41Visits">
+    <configuration name="CustomTests.check3Batches41Visits" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ht23.assignment1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.lnu.os.ht23.a1.required.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="se.lnu.os.ht23.a1.required.impl" />
+      <option name="MAIN_CLASS_NAME" value="se.lnu.os.ht23.a1.required.impl.CustomTests" />
+      <option name="METHOD_NAME" value="check3Batches41Visits" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NapServerTest.checkOneElement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ht23.assignment1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.lnu.os.ht23.a1.required.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="se.lnu.os.ht23.a1.required.impl" />
+      <option name="MAIN_CLASS_NAME" value="se.lnu.os.ht23.a1.required.impl.NapServerTest" />
+      <option name="METHOD_NAME" value="checkOneElement" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="operating-systems" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="operating-systems" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CustomTests.check3Batches41Visits" />
+        <item itemvalue="JUnit.NapServerTest.checkOneElement" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d71069bc-48e3-4faf-856c-7af4f41ba4b3" name="Changes" comment="" />
+      <created>1701186973236</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701186973236</updated>
+    </task>
+    <servers />
+  </component>
+</project>
