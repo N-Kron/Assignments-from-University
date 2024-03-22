@@ -1,0 +1,330 @@
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane
+    maxHeight="-Infinity"
+    maxWidth="-Infinity"
+    minHeight="-Infinity"
+    minWidth="-Infinity"
+    prefHeight="600.0"
+    prefWidth="800.0"
+    xmlns="http://javafx.com/javafx/11.0.2"
+    xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="cookbook_app.controller.LoginController"
+>
+    <left>
+        <AnchorPane
+            prefHeight="600.0"
+            prefWidth="400.0"
+            style="-fx-background-color: #A9A9A9;"
+            BorderPane.alignment="CENTER"
+        >
+            <children>
+                <!-- Logo -->
+                <ImageView
+                    fitHeight="600.0"
+                    fitWidth="400.0"
+                    pickOnBounds="true"
+                    preserveRatio="true"
+                >
+                    <image>
+                        <Image
+                            url="@../../cookbook_app/images/login-screen-img.jpg"
+                        />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane
+            prefHeight="600.0"
+            prefWidth="400.0"
+            BorderPane.alignment="CENTER"
+            style="-fx-background-color: #c6f4a1;"
+        >
+            <Label
+                layoutX="180.0"
+                layoutY="60.0"
+                prefHeight="30.0"
+                prefWidth="90.0"
+                style="-fx-text-fill: #A9A9A9;"
+                text="Login"
+            >
+                <font>
+                    <Font
+                        name="SansSerif Regular"
+                        size="30.0"
+                    />
+                </font>
+            </Label>
+            <TextField
+                fx:id="loginUserIdTextField"
+                layoutX="75.0"
+                layoutY="100.0"
+                prefHeight="30.0"
+                prefWidth="300.0"
+                promptText="User ID"
+                stylesheets="@../../cookbook_app/css/fullpackstyling.css"
+                style="-fx-border-width: 2; -fx-border-color: #A9A9A9; -fx-border-radius: 5;"
+            >
+                <font>
+                    <Font
+                        name="SansSerif Regular"
+                        size="14.0"
+                    />
+                </font>
+            </TextField>
+            <ImageView
+                fitHeight="30.0"
+                fitWidth="30.0"
+                layoutX="35.0"
+                layoutY="100.0"
+                pickOnBounds="true"
+                preserveRatio="true"
+            >
+                <image>
+                    <Image
+                        url="@../../cookbook_app/icons/user-id.png"
+                    />
+                </image>
+            </ImageView>
+            <PasswordField
+                fx:id="loginPasswordPasswordField"
+                layoutX="75.0"
+                layoutY="140.0"
+                prefHeight="30.0"
+                prefWidth="300.0"
+                promptText="Password"
+                style="-fx-border-width: 2; -fx-border-color: #A9A9A9; -fx-border-radius: 5;"
+            >
+                <font>
+                    <Font
+                        name="SansSerif Regular"
+                        size="14.0"
+                    />
+                </font>
+            </PasswordField>
+            <ImageView
+                fitHeight="30.0"
+                fitWidth="30.0"
+                layoutX="35.0"
+                layoutY="140.0"
+                pickOnBounds="true"
+                preserveRatio="true"
+            >
+                <image>
+                    <Image
+                        url="@../../cookbook_app/icons/lock.png"
+                    />
+                </image>
+            </ImageView>
+            <CheckBox
+                fx:id="rememberMeCheckBox"
+                layoutX="75.0"
+                layoutY="195.0"
+                mnemonicParsing="false"
+                style="-fx-text-fill: #A9A9A9;"
+                text="Remember Me"
+            >
+                <font>
+                    <Font
+                        name="SansSerif Regular"
+                        size="15.0"
+                    />
+                </font>
+            </CheckBox>
+            <Button
+                fx:id="loginButton"
+                layoutX="75.0"
+                layoutY="240.0"
+                prefHeight="30.0"
+                prefWidth="300.0"
+                onAction="#signOnClick"
+                mnemonicParsing="false"
+                stylesheets="@../../cookbook_app/css/login.css"
+                text="Login"
+            >
+                <font>
+                    <Font
+                        size="15.0"
+                    />
+                </font>
+            </Button>
+            <Line
+                endX="20.0"
+                endY="310.0"
+                fill="DARKGRAY"
+                startX="380.0"
+                startY="310.0"
+                style="-fx-text-fill: #A9A9A9;"
+                strokeWidth="1.0"
+            />
+
+            <Label
+                layoutX="160.0"
+                layoutY="330.0"
+                prefHeight="36.0"
+                prefWidth="130.0"
+                style="-fx-text-fill: #A9A9A9;"
+                text="Sign-Up"
+            >
+                <font>
+                    <Font
+                        name="SansSerif Regular" size="30.0"
+                    />
+                </font>
+            </Label>
+            <TextField
+                fx:id="signUpUserIdTextField"
+                layoutX="75.0"
+                layoutY="375.0"
+                prefHeight="30.0"
+                prefWidth="300.0"
+                promptText="User ID"
+                style="-fx-border-width: 2; -fx-border-color: #A9A9A9; -fx-border-radius: 5;"
+            >
+                <font>
+                    <Font
+                        name="SansSerif Regular"
+                        size="14.0"
+                    />
+                </font>
+            </TextField>
+            <ImageView
+                fitHeight="30.0"
+                fitWidth="30.0"
+                layoutX="35.0"
+                layoutY="375.0"
+                pickOnBounds="true"
+                preserveRatio="true"
+            >
+                <image>
+                    <Image
+                        url="@../../cookbook_app/icons/user-id.png"
+                    />
+                </image>
+            </ImageView>
+            <TextField
+                fx:id="signUpNameTextField"
+                layoutX="75.0"
+                layoutY="415.0"
+                prefHeight="30.0"
+                prefWidth="300.0"
+                promptText="Name"
+                style="-fx-border-width: 2; -fx-border-color: #A9A9A9; -fx-border-radius: 5;"
+            >
+                <font>
+                    <Font
+                        name="SansSerif Regular"
+                        size="14.0"
+                    />
+                </font>
+                <cursor>
+                    <Cursor
+                        fx:constant="TEXT"
+                    />
+                </cursor>
+            </TextField>
+            <ImageView
+                fitHeight="30.0"
+                fitWidth="30.0"
+                layoutX="35.0"
+                layoutY="415.0"
+                pickOnBounds="true"
+                preserveRatio="true"
+            >
+                <image>
+                    <Image
+                        url="@../../cookbook_app/icons/user.png"
+                    />
+                </image>
+            </ImageView>
+            <PasswordField
+                fx:id="signUpPasswordPasswordField"
+                layoutX="75.0"
+                layoutY="455.0"
+                prefHeight="30.0"
+                prefWidth="300.0"
+                promptText="Password"
+                style="-fx-border-width: 2; -fx-border-color: #A9A9A9; -fx-border-radius: 5;"
+            >
+                <font>
+                    <Font
+                        name="SansSerif Regular"
+                        size="14.0"
+                    />
+                </font>
+            </PasswordField>
+            <ImageView
+                fitHeight="30.0"
+                fitWidth="30.0"
+                layoutX="35.0"
+                layoutY="455.0"
+                pickOnBounds="true"
+                preserveRatio="true"
+            >
+                <image>
+                    <Image
+                        url="@../../cookbook_app/icons/lock.png"
+                    />
+                </image>
+            </ImageView>
+            <PasswordField
+                fx:id="signUpRepeatPasswordPasswordField"
+                layoutX="75.0"
+                layoutY="495.0"
+                prefHeight="30.0"
+                prefWidth="300.0"
+                promptText="Repeat Password"
+                style="-fx-border-width: 2; -fx-border-color: #A9A9A9; -fx-border-radius: 5;"
+            >
+                <font>
+                    <Font
+                        name="SansSerif Regular"
+                        size="14.0"
+                    />
+                </font>
+            </PasswordField>
+            <ImageView
+                fitHeight="30.0"
+                fitWidth="30.0"
+                layoutX="35.0"
+                layoutY="495.0"
+                pickOnBounds="true"
+                preserveRatio="true"
+            >
+                <image>
+                    <Image
+                        url="@../../cookbook_app/icons/lock.png"
+                    />
+                </image>
+            </ImageView>
+            <Button
+                fx:id="signUpButton"
+                layoutX="75.0"
+                layoutY="550.0"
+                onAction="#signupOnClick"
+                mnemonicParsing="false"
+                prefHeight="30.0"
+                prefWidth="300.0"
+                stylesheets="@../../cookbook_app/css/login.css"
+                text="Sign up"
+            >
+                <font>
+                    <Font
+                        name="SansSerif Regular"
+                        size="15.0"
+                    />
+                </font>
+            </Button>
+        </AnchorPane>
+    </right>
+    <bottom></bottom>
+</BorderPane>

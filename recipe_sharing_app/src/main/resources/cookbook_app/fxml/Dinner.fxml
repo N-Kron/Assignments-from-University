@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="635.0" prefWidth="1102.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookbook_app.controller.DinnerController">
+   <children>
+      <Pane prefHeight="139.0" prefWidth="1102.0" style="-fx-background-color: #c6f4a1;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="60.0" layoutY="30.0" text="Dinner" textFill="#31373E">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="91.0" text="This Weeks Dinner" textFill="#31373E">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="backButton" layoutX="0.0" layoutY="40.0" mnemonicParsing="false" onAction="#backOnClick" prefHeight="55" prefWidth="55" stylesheets="@../css/backbutton.css" text="">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" preserveRatio="true">
+               <Image url="@../../cookbook_app/icons/back.png" />
+            </ImageView>
+         </graphic>
+      </Button>
+      <ListView fx:id="list" layoutX="30.0" layoutY="164.0" maxWidth="206.0" prefHeight="185.0" AnchorPane.bottomAnchor="285.4" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="164.00000000000003" />
+      <TextField fx:id="textField" layoutX="30.0" layoutY="373.0" promptText="name of the new week" AnchorPane.bottomAnchor="236.4" AnchorPane.leftAnchor="30.0" />
+      <Button fx:id="addWeek" layoutX="193.0" layoutY="370.0" mnemonicParsing="false" onAction="#addWeek" prefHeight="32.0" prefWidth="32.0" stylesheets="@../css/fullpackstyling.css" text="" AnchorPane.bottomAnchor="233.0" AnchorPane.leftAnchor="193.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteWeek" layoutX="30.0" layoutY="427.0" mnemonicParsing="false" onAction="#deleteWeek" prefHeight="32.0" prefWidth="179.0" stylesheets="@../css/dinner.css" text="Delete the selected week" AnchorPane.bottomAnchor="176.0" AnchorPane.leftAnchor="30.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <GridPane hgap="10.0" layoutX="261.0" layoutY="164.0" minHeight="444.0" minWidth="806.0" vgap="10.0" AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="261.0" AnchorPane.rightAnchor="34.60000000000002" AnchorPane.topAnchor="164.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="100.0" />
+         </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="70.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="70.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="70.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="70.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="70.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="70.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="70.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <ListView fx:id="fieldOne" orientation="HORIZONTAL" prefHeight="59.0" prefWidth="726.0" stylesheets="@../css/dinner.css" GridPane.columnIndex="1" />
+            <ListView fx:id="fieldTwo" orientation="HORIZONTAL" prefHeight="59.0" prefWidth="726.0" stylesheets="@../css/dinner.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ListView fx:id="fieldThree" orientation="HORIZONTAL" prefHeight="59.0" prefWidth="726.0" stylesheets="@../css/dinner.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ListView fx:id="fieldFour" orientation="HORIZONTAL" prefHeight="59.0" prefWidth="726.0" stylesheets="@../css/dinner.css" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ListView fx:id="fieldFive" orientation="HORIZONTAL" prefHeight="59.0" prefWidth="726.0" stylesheets="@../css/dinner.css" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ListView fx:id="fieldSix" orientation="HORIZONTAL" prefHeight="59.0" prefWidth="726.0" stylesheets="@../css/dinner.css" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <ListView fx:id="fieldSeven" orientation="HORIZONTAL" prefHeight="59.0" prefWidth="726.0" stylesheets="@../css/dinner.css" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #c6f4a1;" text="Day 1">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #c6f4a1;" text="Day 2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #c6f4a1;" text="Day 3" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #c6f4a1;" text="Day 4" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #c6f4a1;" text="Day 5" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #c6f4a1;" text="Day 6" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #c6f4a1;" text="Day 7" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <Button fx:id="addRecipe" layoutX="30.0" layoutY="488.0" mnemonicParsing="false" onAction="#addRecipe" prefHeight="52.0" prefWidth="150.0" stylesheets="@../css/dinner.css" text="Add a recipe" AnchorPane.bottomAnchor="97.0" AnchorPane.leftAnchor="30.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="42.0">
+               <image>
+                  <Image url="@../icons/cooking-book.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="shopList" layoutX="30.0" layoutY="556.0" mnemonicParsing="false" onAction="#shopping" prefHeight="52.0" prefWidth="164.0" stylesheets="@../css/dinner.css" text="Shopping list" AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="30.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="42.0">
+               <image>
+                  <Image url="@../icons/to-do-list.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

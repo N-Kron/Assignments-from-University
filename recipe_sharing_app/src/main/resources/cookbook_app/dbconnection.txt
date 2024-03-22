@@ -1,0 +1,1 @@
+jdbc:mariadb://93.182.151.4:28577/cookbook?user=root&password=forthCommrads

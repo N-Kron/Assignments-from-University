@@ -1,0 +1,125 @@
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.collections.FXCollections?>
+
+
+<BorderPane
+    maxHeight="-Infinity"
+    maxWidth="-Infinity"
+    minHeight="-Infinity"
+    minWidth="-Infinity"
+    prefHeight="600.0"
+    prefWidth="800.0"
+    xmlns="http://javafx.com/javafx/11.0.2"
+    xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="cookbook_app.controller.SendMessageController"
+    >
+    <left>
+        <AnchorPane
+            prefHeight="600.0"
+            prefWidth="300.0"
+            style="-fx-background-color: #c6f4a1;"
+            BorderPane.alignment="CENTER"
+        >
+            <ComboBox fx:id="Dropdown" layoutX="50.0" layoutY="100.0" prefWidth="200.0">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        
+                    </FXCollections>
+                </items>
+            </ComboBox>
+            <Label
+                layoutX="50"
+                layoutY="60.0"
+                prefHeight="20.0"
+                prefWidth="300.0"
+                style="-fx-text-fill: #A9A9A9;"
+                text="Recipient"
+            >
+                <font>
+                    <Font
+                        name="SansSerif Regular"
+                        size="30.0"
+                    />
+                </font>
+            </Label>
+
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane
+            prefHeight="600.0"
+            prefWidth="500.0"
+            BorderPane.alignment="CENTER"
+            style="-fx-background-color: white;"
+        >
+
+            <Label
+                layoutX="150.0"
+                layoutY="60.0"
+                prefHeight="20.0"
+                prefWidth="300.0"
+                style="-fx-text-fill: #A9A9A9;"
+                text="Message"
+            >
+                <font>
+                    <Font
+                        name="SansSerif Regular"
+                        size="30.0"
+                    />
+                </font>
+            </Label>
+            
+            <TextArea
+                fx:id="MessageField"
+                layoutX="70.0"
+                layoutY="100.0"
+                prefHeight="300.0"
+                prefWidth="320.0"
+                promptText="Enter Message"
+                style="-fx-alignment: top-left;"
+                wrapText= "true"
+                
+            >
+                <font>
+                    <Font
+                        name="SansSerif Regular"
+                        size="14.0"
+                    />
+                </font>
+            </TextArea>
+            
+            
+            <Button
+                fx:id="Send"
+                layoutX="70.0"
+                layoutY="500.0"
+                prefHeight="50.0"
+                prefWidth="320.0"
+                onAction="#sendOnClick"
+                mnemonicParsing="false"
+                stylesheets="@../../cookbook_app/css/login.css"
+                text="Send"
+                style = "-fx-background-color: #c6f4a1;"
+            >
+                <font>
+                    <Font
+                        size="15.0"
+                    />
+                </font>
+            </Button>
+            
+        </AnchorPane>
+    </right>
+    
+    
+    <bottom>
+    </bottom>
+</BorderPane>

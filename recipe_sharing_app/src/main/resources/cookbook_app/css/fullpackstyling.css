@@ -1,0 +1,109 @@
+.button {
+    background-color: #F3F3F3;
+    font-size: large;
+
+    -fx-background-color: #F3F3F3;
+    -fx-font-size: large;
+}
+
+.button:hover {
+    background-color: #c6fec6 ;
+
+    -fx-background-color: #c6fec6 ;
+}
+
+.button:pressed {
+    background-color: #a9f9a1 ;
+
+    -fx-background-color: #a9f9a1 ;
+}
+
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    background-color: #b5fdac;
+
+    -fx-cell-size: 20;
+    -fx-background-color: #b5fdac;
+}
+
+.table-view .column-header .label {
+    font-weight: bold;
+
+    -fx-text-fill: rgb(0, 0, 0);
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.table-view .cell{
+    -fx-cell-size: 30;
+    -fx-alignment: center-left;
+    -fx-text-fill: #000000;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.table-row-cell:selected {
+    background-color: rgb(211, 255, 204);
+
+    -fx-background-color: rgb(211, 255, 204);
+ }
+
+ .table-row-cell:selected .text {
+    fill: rgb(77, 77, 77) ;
+
+    -fx-fill: rgb(77, 77, 77) ;
+ }
+/* scroll bar starts here */
+
+/* The increment and decrement button CSS class of scrollbar */
+.table-view .increment-button ,.table-view .decrement-button {
+    background-color: transparent;
+
+    -fx-background-color: transparent;
+	-fx-background-radius: 2em;
+}
+
+/* The main scrollbar **track** CSS class  */
+.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar:vertical .track {
+	background-color: transparent;
+    border-color: derive(  #2de849,80%);
+	border-radius: 2em;
+
+	-fx-background-color: transparent;
+	-fx-border-color:derive(  #2de849,80%);
+	-fx-background-radius: 2em;
+	-fx-border-radius: 2em;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    background-color: derive( #2de833,90%);
+
+    -fx-background-color: derive( #2de833,90%);
+	-fx-background-insets: 2, 0, 0;
+	-fx-background-radius: 2em;
+}
+
+/* chart properties */
+.chart {
+    padding: 10px;
+    background-color: transparent;
+
+    -fx-padding: 10px;
+    -fx-background-color: transparent;
+    -fx-legend-visible: false;
+}
+.chart-plot-background {
+    background-color:transparent;
+
+    -fx-background-color:transparent;
+}
+
+.chart-pie {
+    border-color: derive(-fx-pie-color, 1%);
+    border-width: 0px;
+
+    -fx-border-color: derive(-fx-pie-color, 1%);
+    -fx-border-width: 0px;
+}

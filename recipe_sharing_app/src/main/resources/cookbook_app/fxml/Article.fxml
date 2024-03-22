@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.Button?>
+
+
+<AnchorPane
+   maxHeight="-Infinity"
+   maxWidth="-Infinity"
+   minHeight="-Infinity"
+   minWidth="-Infinity"
+   prefHeight="720"
+   prefWidth="1280"
+   style="-fx-background-color: #fff;"
+   xmlns="http://javafx.com/javafx/19"
+   xmlns:fx="http://javafx.com/fxml/1"
+   fx:controller="cookbook_app.controller.ArticleController"
+>
+   <children>
+      <Pane
+         prefHeight="180"
+         prefWidth="1280"
+         style="-fx-background-color: #c6f4a1;"
+         AnchorPane.leftAnchor="0.0"
+         AnchorPane.rightAnchor="0.0"
+         AnchorPane.topAnchor="0.0"
+      >
+         <children>
+            <Button
+               fx:id="backButton"
+               layoutX="0.0"
+               layoutY="52.0"
+               prefHeight ="55"
+               prefWidth ="55"
+               onAction="#backOnClick"
+               mnemonicParsing="false"
+               stylesheets="@../css/backbutton.css"
+               text=""
+            >
+               <graphic>
+                  <ImageView
+                     fitHeight="40.0"
+                     fitWidth="40.0"
+                     preserveRatio="true"
+                  >
+                     <Image
+                        url="@../../cookbook_app/icons/back.png"
+                     />
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label
+               fx:id="ArticleName"
+               layoutX="60.0"
+               layoutY="44.0"
+               text=""
+               textFill="#31373E"
+            >
+               <font>
+                  <Font
+                     size="48.0"
+                  />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ScrollPane
+         fx:id="textPane"
+         fitToWidth="true"
+         hbarPolicy="NEVER"
+         vbarPolicy="NEVER"
+         hmax="0.0"
+         layoutX="80.0"
+         layoutY="230.0"
+         prefHeight="400"
+         prefWidth="2160"
+         style="-fx-background: #ffffff; -fx-border-color: #ffffff"
+         AnchorPane.leftAnchor="80.0"
+         AnchorPane.rightAnchor="65.0"
+      >
+         <Label
+            fx:id="ArticleText"
+            layoutX="50.0"
+            layoutY="44.0"
+            prefWidth="2160"
+            text=""
+            textFill="#31373E"
+            wrapText="true"
+         >
+            <font>
+               <Font
+                  size="16"
+               />
+            </font>
+         </Label>
+      </ScrollPane>
+   </children>
+</AnchorPane>

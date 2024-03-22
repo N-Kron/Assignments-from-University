@@ -1,0 +1,92 @@
+scroll-pane:focused {
+    border-color: #fff;
+
+    -fx-border-color: #fff;
+}
+
+.instructionsfield {
+    background-color: transparent;
+    border-width: 2;
+    border-color: #000;
+
+    -fx-background-color: transparent;
+    -fx-border-width: 2;
+    -fx-border-color: #000;
+}
+
+.textfield {
+    background-color: transparent;
+    border-style: hidden hidden solid hidden;
+    border-width: 2;
+    border-color: #000;
+
+    -fx-background-color: transparent;
+    -fx-border-style: hidden hidden solid hidden;
+    -fx-border-width: 2;
+    -fx-border-color: #000;
+}
+
+.textfield__empty {
+    border-color: #8e8e8e;
+
+    -fx-border-color: #8e8e8e;
+}
+
+.textfield__disabled {
+    border-style: hidden;
+    opacity: 1.0;
+
+    -fx-border-style: hidden;
+    -fx-opacity: 1.0;
+    -fx-text-fill: #000;
+}
+
+.textfield__invalid {
+    border-color: #BF4E00;
+
+    -fx-text-fill: #BF4E00;
+    -fx-border-color: #BF4E00;
+}
+
+
+.button {
+    background-color : #F3F3F3;
+    font-size: 16px;
+
+    -fx-background-color : #F3F3F3;
+    -fx-font-size: 16px;
+}
+
+.button__transparent {
+    background-color: transparent;
+
+    -fx-background-color: transparent;
+}
+
+.button__delete {
+    -fx-text-fill: #BF4E00;
+}
+
+.button:hover {
+    background-color: #c6fec6;
+    
+    -fx-background-color: #c6fec6;
+}
+
+.button:pressed {
+    background-color: #a9f9a1;
+    
+    -fx-background-color: #a9f9a1;
+}
+
+.button__delete:hover {
+    background-color: #fec6c6;
+    
+    -fx-background-color: #fec6c6;
+}
+ 
+.button__delete:pressed {
+    background-color: #f9a1a9;
+    
+    -fx-background-color: #f9a1a9;
+}

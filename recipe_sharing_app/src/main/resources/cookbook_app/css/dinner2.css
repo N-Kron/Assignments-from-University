@@ -1,0 +1,19 @@
+.button {
+    background-color: rgb(235, 235, 235);
+    font-size: large;
+
+    -fx-background-color: rgb(235, 235, 235);
+    -fx-font-size: large;
+}
+
+.button:hover {
+    background-color: #c6fec6;
+
+    -fx-background-color: #c6fec6;
+}
+
+.button:pressed {
+    background-color: #a9f9a1;
+
+    -fx-background-color: #a9f9a1;
+}
